@@ -1,0 +1,33 @@
+{
+  "name": "invoicejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "output/index.ts",
+  "engines": {
+    "node": "18"
+  },
+  "scripts": {
+    "dev": "tsx --watch src/server.ts",
+    "lint": "eslint src --ext .ts --fix",
+    "build": "tsup src",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docxtemplater": "^3.37.2",
+    "fastify": "^4.17.0",
+    "luxon": "^3.3.0",
+    "pizzip": "^3.1.4"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/luxon": "^3.3.0",
+    "@types/node": "^18.16.3",
+    "eslint": "^8.39.0",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.0.4"
+  }
+}
